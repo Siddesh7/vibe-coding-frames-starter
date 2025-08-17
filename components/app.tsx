@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import sdk from "@farcaster/frame-sdk";
 
 import WalletConnector from "./wallet-connector";
+import DownloadButton from "./download-button";
 
 export default function App() {
   const [isSDKLoaded, setIsSDKLoaded] = useState(false);
@@ -24,6 +25,7 @@ export default function App() {
     <div>
       <p>we vibe code</p>
       <WalletConnector />
+      <DownloadButton />
     </div>
   );
 }

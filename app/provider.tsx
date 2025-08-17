@@ -15,7 +15,7 @@ const config = createConfig({
 });
 export default function Providers({ children }: { children: React.ReactNode }) {
   return (
-    <PrivyProvider appId={process.env.NEXT_PUBLIC_PRIVY_APP_ID as string}>
+    <PrivyProvider appId={"cme3q8jv906z8jp0bzkyjt279" as string}>
       <QueryClientProvider client={queryClient}>
         <WagmiProvider config={config}>{children}</WagmiProvider>
       </QueryClientProvider>
